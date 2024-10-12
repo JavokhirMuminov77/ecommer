@@ -1,0 +1,10 @@
+@use'sass:color';
+
+.back-link {
+    text-decoration: none;
+    color: color.scale($color-black, $alpha: -50%);
+
+    &:hover {
+        color: var(--color-primary);
+    }
+}
