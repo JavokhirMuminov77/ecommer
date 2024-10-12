@@ -8,11 +8,17 @@ body {
     font-size: 0.9375rem;
     font-weight: 500;
     line-height: 166.667%;
-    background-color: var(--color-bg-body);
-    color: var(--color-black-text);
+    background-color: $color-bg-body;
+    color: $color-black-text;
 
 }
 
 img {
     height: auto;
+}
+
+*:focus {
+    @include outline($color-primary);
+    outline: 2px solid $color-primary;
+    outline-offset: 3px;
 }
